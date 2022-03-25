@@ -1,0 +1,17 @@
+
+<div class="d-flex" id="wrapper">
+  <app-profesorsidebar></app-profesorsidebar>
+  <!-- Page Content -->
+
+
+  <div #wrapper id="page-content-wrapper">
+    <app-profesornavbar></app-profesornavbar>
+    <iframe class="chat" [src]="url | sanitizer" allowfullscreen></iframe>
+    <!--
+      <app-footer></app-footer>
+    -->
+
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+

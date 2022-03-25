@@ -1,0 +1,136 @@
+
+
+
+<!--
+
+<div class="fondo">
+  <div class="login-page">
+    <div class="form">
+      <form (ngSubmit)="onSubmit()" [formGroup]="form" class="login-form">
+        <input formControlName="username" type="text" placeholder="username"/>
+        <input formControlName="password" type="password" placeholder="password"/>
+        <button class="spectre" type="submit"> Entrar </button>
+        <p class="message">¿Aun no estas registrado? <a href="#">!Crear cuenta!</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+-->
+
+<app-nabvarp></app-nabvarp>
+<section>
+  <div class="color"></div>
+  <div class="color"></div>
+  <div class="color"></div>
+  <div class="box">
+    <div class="square" style="--i:0"></div>
+    <div class="square" style="--i:1"></div>
+    <div class="square" style="--i:2"></div>
+    <div class="square" style="--i:3"></div>
+    <div class="square" style="--i:4"></div>
+
+
+    <div class="container">
+
+
+      <div class="form">
+        <h2>Inicia Sesion Alumno</h2>
+        <form [formGroup]="form"
+        (ngSubmit)="onSubmit()">
+
+          <div class="inputBox">
+            <input formControlName="usuario" type="text" placeholder="Usuario">
+            <div *ngIf=" hasError('usuario') " class="message-error">
+              <p class="message-erro"> Dato incorrecto </p>
+            </div>
+          </div>
+          <div class="inputBox">
+            <input formControlName="contraseña" type="password" placeholder="Contraseña">
+            <div *ngIf=" hasError('contraseña') " class="message-error">
+              <p class="message-erro"> Dato incorrecto </p>
+            </div>
+          </div>
+          <div class="inputBox2">
+            <!--
+            <a href=".#"  routerLink="/alumno/inicio" ><button type="submit">Ingresar Alumno</button></a>
+            -->
+            <button class="button-cfe-full" type="submit" >Iniciar Sesion</button>
+
+          </div>
+
+          <p class="forget">¿No tienes una cuenta? <a routerLink="/auth/singup">Ingresa Aqui</a></p>
+
+        </form>
+      </div>
+
+    </div>
+
+
+    <div class="container">
+      <div class="form">
+        <h2>Inicia Sesion Profesor</h2>
+        <form [formGroup]="formp"
+        (ngSubmit)="onSubmitP()">
+
+          <div class="inputBox">
+            <input formControlName="usernamep" type="text" placeholder="Usuario">
+            <div *ngIf=" hasErrorP('usernamep') " class="message-error">
+              <p class="message-erro"> Dato incorrecto </p>
+            </div>
+          </div>
+          <div class="inputBox">
+            <input formControlName="passwordp" type="password" placeholder="Contraseña">
+            <div *ngIf=" hasErrorP('passwordp') " class="message-error">
+              <p class="message-erro"> Dato incorrecto </p>
+            </div>
+          </div>
+          <div class="inputBox2">
+            <!--
+            <a href=".#"  routerLink="/alumno/inicio" ><button type="submit">Ingresar Alumno</button></a>
+            -->
+            <button class="button-cfe-full" type="submit" >Iniciar Sesion</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="container">
+      <div class="form">
+        <h2>Inicia Sesion Administrador</h2>
+        <form [formGroup]="forma"
+        (ngSubmit)="onSubmitA()">
+
+          <div class="inputBox">
+            <input formControlName="usernamea" type="text" placeholder="Usuario">
+            <div *ngIf=" hasErrorP('usernamea') " class="message-error">
+              <p class="message-erro"> Dato incorrecto </p>
+            </div>
+          </div>
+          <div class="inputBox">
+            <input formControlName="passworda" type="password" placeholder="Contraseña">
+            <div *ngIf=" hasErrorP('passworda') " class="message-error">
+              <p class="message-erro"> Dato incorrecto </p>
+            </div>
+          </div>
+          <div class="inputBox2">
+            <!--
+            <a href=".#"  routerLink="/alumno/inicio" ><button type="submit">Ingresar Alumno</button></a>
+            -->
+            <button class="button-cfe-full" type="submit" >Iniciar Sesion</button>
+
+          </div>
+
+        </form>
+      </div>
+      </div>
+
+
+
+  </div>
+</section>

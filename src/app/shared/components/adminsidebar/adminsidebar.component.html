@@ -1,0 +1,26 @@
+<div class="bg-light white border-right" id="sidebar-wrapper">
+  <div class="sidebar-heading">
+      <h3>Spectre</h3>
+      <h2>Administrador</h2>
+      <div class="head">
+        <img src="/assets/img/perfil.png" height="70px" alt="">
+        <div class="contenedor">
+          <p>Nombre</p>
+          <p>{{name}}</p>
+          <i class="fas fa-globe"></i> <span class="online"> Online</span>
+        </div>
+      </div>
+  </div>
+  <div class="list-group list-group-flush">
+
+    <a routerLink="/admin/inicioA" routerLinkActive="act" class="list-group-item list-group-item-action bg-light">
+      Inicio
+    </a>
+    <a routerLink="/admin/alumnosC" routerLinkActive="act" class="list-group-item list-group-item-action bg-light">
+      Alumnos
+    </a>
+    <a routerLink="/admin/profesC" routerLinkActive="act" class="list-group-item list-group-item-action bg-light">
+      Profesores
+    </a>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.navbar-collapse{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+.nav-link{
+  cursor: pointer;
+}
+
+a{
+  color: white !important;
+  margin-right: 10px;
+}
+
+#barra{
+  width: 100%;
+}
+
+nav{
+  background-color: #071635 !important;
+  width: 100% !important;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+button{
+  border: 1px solid white !important;
+}
+
+.white{
+  color: white;
+}
